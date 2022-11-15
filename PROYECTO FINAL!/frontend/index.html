@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js"></script>
+    <link rel="shortcut icon" href="#">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="headerclass">
+            <h2 id="headerTitle">CONSECIONARIO DE AUTOMÓVILES</h2>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="cont">
+            <h1 class="title">PROYECTO FINAL</h1>
+            <form id="form">
+                <label>Brand: </label>
+                <select name="select" id="selectBrand">
+                    <option value="">-</option>
+                    <option value="seat">seat</option>
+                    <option value="audi" selected>audi</option>
+                    <option value="volkswagen">volkswagen</option>
+                    <option value="porsche">porsche</option>
+                    <option value="bmw">bmw</option>
+                </select>
+
+                <label>Color: </label>
+                <select name="select" id="selectColor">
+                    <option value="">-</option>
+                    <option value="blue">blue</option>
+                    <option value="red" selected>red</option>
+                    <option value="yellow">yellow</option>
+                    <option value="black">black</option>
+                </select>
+
+                <label>Price: </label>
+                <input type="number" name="price" id='price' placeholder="Insert Price">
+                <button id="button">SEND</button>
+            </form>
+        </div>
+        <div class="contTable">
+            <h1 class="title">RESULTS</h1>
+            <table class="table">
+                <thead>
+                    <th>BRAND</th>
+                    <th>COLOR</th>
+                    <th>PRICE</th>
+                </thead>
+                <tbody id="tBody"></tbody>
+                <p id="noResults"></p>
+            </table>
+        </div>
+    </div>
+</body>
