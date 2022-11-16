@@ -8,6 +8,8 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: center;
     background-color: lightgrey;
     display: flex;
     padding: 20px;
@@ -80,4 +82,16 @@ td, th {
 
 #noResults {
     font-size: 25px;
+}
+
+.clasefooter {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+    text-align: center;
 }
